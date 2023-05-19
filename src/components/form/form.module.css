@@ -1,0 +1,90 @@
+.container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.form {
+    max-width: 700px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    padding-block-end: 70px;
+    border-radius: 20px;
+    /* box-shadow: 0 40px 30px rgb(143, 143, 143); */
+    border: 3px solid #333;
+}
+.form input[type='text'],
+.form input[type="number"],
+.form input[type="date"]
+ {
+    height: 50px;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #333;
+
+}
+
+.form button{
+    height: 50px;
+    background-color: teal;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.form button:hover{
+    background-color: rgb(57, 176, 255);
+}
+
+.flexibleInputFields{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.marginedDiv{
+    display: flex;
+    gap: 10px;
+}
+
+
+.radioBtns, .checkBoxBtns{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+}
+.selectionBox{
+    height: 40px;
+}
+.radioBtns span ,.checkBoxBtns span{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    white-space: nowrap;
+}
+@media screen and (max-width : 968px) {
+    .container{
+        padding: 10px;
+    }
+    .form{
+        padding: 10px;
+        padding-bottom: 40px;
+    }
+}
+@media screen and (max-width: 768px){
+    .marginedDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,37 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: teal;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.h1{
+    color: white;
+}
+.header ul{
+    display: flex;
+    gap: 60px;
+}
+.header ul li{
+    list-style-type: none;
+    color: white;
+    cursor: pointer;
+    
+
+}
+.header ul li:hover{
+    text-decoration: underline;
+}
+.icon{
+    display: none;
+}
+@media only screen and ( max-width: 868px ){
+
+    .header ul {
+        display: none;
+    }
+    .icon{
+        display: block;
+    }
+}
